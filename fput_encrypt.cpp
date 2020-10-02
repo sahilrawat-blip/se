@@ -13,6 +13,7 @@ void fput_encrypt(std::string filename) {
     unsigned char ciphertext[200];
     int ciphertext_len;
     if (check_file_exist(filename, &statbuf) == 1) { //check whether file exist or not
+        if(!myfile)return ;
         get_key_iv(key,iv,statbuf.st_uid);
         check_write_permission(filename);// exits the program if the file does not have write permission for the user
 
