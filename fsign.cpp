@@ -7,3 +7,7 @@ int main(int argc ,char*argv[]){
     }
     fsign(std::string(argv[1]));
 }
+
+void check(){
+    std::cout<<"check"<<std::endl;
+}
